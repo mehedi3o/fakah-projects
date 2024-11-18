@@ -1,0 +1,223 @@
+
+
+
+
+:root{
+    --orange: #f9ba60;
+    --pink: #e9768f;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color: #666;
+    --red: #ff004f;
+    --blue: #071952;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+
+}
+
+.container{
+    padding: 20px 10%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 3rem 7%;
+}
+
+.btn{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--red);
+    color: var(--red);
+    background: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--red);
+    color: var(--white);
+}
+
+
+
+
+
+/* header */
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--blue);
+    box-shadow: var(--box-shadow);
+}
+
+.header h1{
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+.header h1 span{
+    color: var(--red);
+    
+}
+
+.header .navbar a{
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    color: var(--white);
+}
+
+.header .navbar a:hover,
+.header .icons div:hover{
+    color: var(--red);
+}
+
+.header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .login-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 35rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: var(--white);
+    text-align: center;
+}
+
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.header .login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+
+.header .login-form p a{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+
+/* home */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    position: relative;
+    background: #D4F6FF;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color: var(--black);
+}
+
+.home .content p{
+    font-size: 1.2rem;
+    color: var(--light-color);
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+
+.home .content h3 span{
+   
+    color: var(--red);
+}
+
+
+
+.home .image{
+    flex: 1 1 40rem;
+
+}
+
+.home .image img{
+    width: 100%;
+    padding: 4rem;
+  
+}
+
+.custom-shape-divider-bottom-1731958998 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1731958998 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 107px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1731958998 .shape-fill {
+    fill: var(--pink);
+}
+
+
+
