@@ -56,8 +56,36 @@ section{
     background: var(--red);
     color: var(--white);
 }
+.btn2{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--orange);
+    color: var(--orange);
+    background: none;
+    cursor: pointer;
+}
 
+.btn2:hover{
+    background: var(--orange);
+    color: var(--white);
+}
 
+.heading{
+    font-size: 4rem;
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 6rem;
+}
+
+.heading span{
+    color: var(--orange);
+    text-transform: uppercase;
+}
 
 
 
@@ -218,6 +246,95 @@ section{
 .custom-shape-divider-bottom-1731958998 .shape-fill {
     fill: var(--pink);
 }
+
+
+/* about  */
+
+.about .row{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+}
+
+.about{
+    background: var(--pink);
+}
+
+.about .row .image{
+    flex: 1 1 50rem ;
+}
+
+.about .row .image img{
+    width: 100%;
+    height: 100%;
+}
+.about .row .content{
+    flex: 1 1 40rem;
+}
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: var(--white);
+    line-height: 1.5;
+}
+.about .row .content p{
+    font-size: 1.4rem;
+    color: var(--white);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
+/* eduction section */
+
+.education .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.education .box-container .box:nth-child(odd){
+    background: var(--pink);   
+}
+
+.education .box-container .box:nth-child(2){
+    background: var(--pink);   
+}
+
+.education .box-container .box{
+    background: var(--white);
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    outline: .1rem solid rgba(0,0,0,.1);
+    outline-offset: -1rem;
+    overflow: hidden;
+}
+
+.education .box-container .box:hover img{
+    transform: scale(1.1);
+}
+
+.education .box-container .box h3{
+  font-size: 2.5rem;
+  color: var(--white);
+  line-height: 1.8;
+  padding-top: 3rem;
+  padding-left: 2rem;  
+}
+
+.education .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--white);
+    padding: 1rem 2rem;
+}
+.education .box-container .box img{
+    width: 100%;
+    height: 66%;
+}
+
+
 
 
 
