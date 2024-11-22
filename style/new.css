@@ -426,3 +426,157 @@ section{
 }
 
 
+/* gallery */
+
+.gallery{
+    background: url(../Photo/bg-main.png) no-repeat;
+    background-size: cover;
+
+}
+
+.gallery .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.gallery .gallery-container .box{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .gallery-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   
+}
+
+.gallery .gallery-container .box:hover img{
+  transform: scale(1.2);
+}
+
+.gallery .gallery-container .box .icon{
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 0; left: 0;
+   z-index: 10;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,.4); 
+   display: none;
+}
+.gallery .gallery-container .box .icon i{
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.gallery .gallery-container .box:hover .icon{
+    display: flex;
+}
+
+
+/* contact us  */
+
+.contact .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.contact .icons-container .icons{
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+    text-align: center;
+    outline: .1rem solid rgba(0,0,0,.1);
+    outline-offset: -1rem;
+}
+.contact .icons-container .icons i{
+   font-size: 2.5rem;
+   height: 6rem;
+   width: 6rem;
+   color: var(--white);
+   line-height: 6rem;
+   border-radius: 50%;
+   background: var(--orange); 
+}
+
+.contact .icons-container .icons h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+.contact .icons-container .icons p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--light-color);
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .row .image{
+    flex: 1 1 20rem;
+  
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+
+
+.contact .row form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+    border: 0.1rem solid rgba(0,0,0,.4);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+
+
+
+
+.contact .row form h3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--black);    
+}
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .row form .inputBox input{
+    width: 49%;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea{
+    font-size: 1.6rem;
+    border: 0.1rem solid rgba(0,0,0,.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    margin: .7rem 0;
+}
+
+.contact .row form .inputBox input:focus,
+.contact .row form textarea:focus{
+    border: 0.1rem solid var(--orange);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    width: 100%;
+    resize: none;
+}
