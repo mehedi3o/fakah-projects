@@ -16,25 +16,41 @@
     <header class="header" id="head">
         <h1> Fa<span>kah</span> 
         </h1>
-            <nav class="navbar">
+
+            <!-- <nav class="navbar">
                 <a href="#">Home</a>
                 <a href="#">Schools</a>
                 <a href="#">Parents</a>
                 <a href="#">Canteen</a>
-                <a href="#">FAQs</a>
-
+                <a href="#">FAQs</a> 
                 
-               
+                <i class="fa-regular fa-circle-xmark fas" onclick="colsemenu()"></i>
               
-                
-            </nav>
+            </nav> -->
 
+        <!-- old navbar -->
 
-            <div class="icons">
+        <nav>
+           
+         <ul id="sidemenu">
+         <li><a href="#herder">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#education">Education</a></li>
+         <li><a href="#gallery">Gallery</a></li>
+         <li><a href="#contact">Contact</a></li>
+        
+         <i class="fa-regular fa-circle-xmark fas" onclick="colsemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            
+        </nav>
+             
 
-                <div class="fa-solid fa-user" id="login-btn"></div>
-                <div class="fa-solid fa-bars" id="menu-btn"></div>
-            </div>
+        
+        <div class="icons">
+            <div class="fa-solid fa-user" id="login-btn"></div>
+        </div>
+           
 
 
             <!-- form section -->
@@ -45,7 +61,7 @@
          <input type="email" placeholder="your email" class="box">
          <input type="password" placeholder="your password" class="box">
          <p>Forget your password <a href="#">Click here</a> </p>
-         <input type="submit" value="login now" class="btn">
+         <input type="submit" value="login now" class="btn2">
 
             </form>
            
@@ -236,14 +252,14 @@
                     <i class="fa-solid fa-plus"></i>
                 </div>
             </a>
-            <a href="Photo/sch3.jpeg" class="box">
-                <img src="Photo/sch3.jpeg" alt="">
+            <a href="Photo/bg-5.jpg" class="box">
+                <img src="Photo/bg-5.jpg" alt="">
                 <div class="icon">
                     <i class="fa-solid fa-plus"></i>
                 </div>
             </a>
-            <a href="Photo/scho2.jpeg" class="box">
-                <img src="Photo/scho2.jpeg" alt="">
+            <a href="Photo/banner.jpg" class="box">
+                <img src="Photo/banner.jpg" alt="">
                 <div class="icon">
                     <i class="fa-solid fa-plus"></i>
                 </div>
@@ -358,18 +374,8 @@
 
              <!-- footer end-->
 
-
-
-
-      <script src="script/script.js"></script>
-
-      <script>
-        lightGallery(document.querySelector('.gallery .gallery-container'));
-      </script>
-
-
-    
-
-
 </body>
+
+<script src="script/script.js"></script>
+
 </html>
