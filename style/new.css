@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
@@ -14,12 +14,13 @@
 
 }
 
-.container{
+/* .container{
     padding: 20px 10%;
-}
+} */
 
 
 *{
+    font-family: 'poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -94,28 +95,37 @@ section{
 .header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    z-index: 2;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 8%;
+    padding: 2rem 9%;
     background: var(--white);
     box-shadow: var(--box-shadow);
 }
 
-.header h1{
-    font-size: 3.5rem;
+.header .logo{
+    font-size: 2.2rem;
+    font-weight: bold;
     color: var(--black);
 }
-
-.header h1 span{
+.header .logo i{
     color: var(--red);
-    
 }
 
-/* 
+.header a span{
+    color: var(--red);
+}
+
+
+
+
+
+
+
+
 .header .navbar a{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin: 0 1rem;
     color: var(--black);
 }
@@ -123,13 +133,11 @@ section{
 .header .navbar a:hover,
 .header .icons div:hover{
     color: var(--red);
-} */
-
-.header .icons div:hover{
-    color: var(--red);
 }
 
-nav{
+
+
+/* nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,7 +173,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-
+ */
 
 
 .header .icons div{
@@ -176,10 +184,9 @@ nav ul li a:hover::after{
 }
 
 
-nav .fas{
+#menu-btn{
     display: none;
 }
-
 
 
 
@@ -236,7 +243,7 @@ nav .fas{
     gap: 1.5rem;
     align-items: center;
     position: relative;
-    background: #D4F6FF;
+    /* background: #D4F6FF; */
 }
 
 .home .content{
@@ -706,22 +713,19 @@ nav .fas{
       
     }
 
- 
-
-    .header .navber{
-        position: fixed;
-        top: 0; right: 0;
-        width: 30rem;
+     .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 35rem;
         box-shadow: var(--box-shadow);
+        padding: 2rem;
         border-radius: .5rem;
         background: var(--white);
-    }
+        text-align: center;
 
-  
-  
+        }
 
-
-    .header .navbar .active{
+    .header .navbar.active {
         right: 2rem;
         transition: .4s linear;
     }
@@ -751,7 +755,7 @@ nav .fas{
     }
 
 
-    nav .fas{
+    /* nav .fas{
         display: block;
         font-size: 25px;
     }
@@ -776,7 +780,7 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
- 
+  */
        
    
 
